@@ -1,0 +1,87 @@
+/* src/App.css */
+@font-face {
+  font-family: 'BinggraeFont';
+  src: url('./assets/fonts/Binggrae-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+body {
+
+  margin: 0;
+  font-family: 'BinggraeFont', sans-serif;
+    background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+button {
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+    padding: 12px 24px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-color:none;
+}
+
+/* Свечение (псевдо-элемент) */
+button::before {
+    border-color:none;
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(45deg,
+        #ff0000, #ff7300, #fffb00,
+        #48ff00, #00ffd5, #002bff,
+        #7a00ff, #ff00c8, #ff0000);
+    background-size: 400%;
+    filter: blur(25px);
+    z-index: -1;
+    border-radius: 10px;
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+/* Появление свечения при наведении */
+button:hover::before {
+    opacity: 1;
+}
+
+/* Красная кнопка при нажатии */
+button:active {
+    background: red;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+.ReactModal__Content {
+    background-image: var(--bg-image);
+  width: 400px;
+  max-width: 90%;
+  padding: 20px;
+  border-radius: 10%;
+  background-color: #e36a6a;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(-20px);
+ 
+}
+
+.my-overlay {
+  background-image: var(--bg-image);
+  background-color: rgba(0, 0, 0, 0.5);
+}
