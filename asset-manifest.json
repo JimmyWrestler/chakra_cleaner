@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/chakra_cleaner/static/css/main.c2e6171d.css",
+    "main.js": "/chakra_cleaner/static/js/main.6b1623a7.js",
+    "static/js/453.c323b5c0.chunk.js": "/chakra_cleaner/static/js/453.c323b5c0.chunk.js",
+    "static/media/Binggrae-Bold.otf": "/chakra_cleaner/static/media/Binggrae-Bold.4364114a6240a6f779ec.otf",
+    "index.html": "/chakra_cleaner/index.html",
+    "main.c2e6171d.css.map": "/chakra_cleaner/static/css/main.c2e6171d.css.map",
+    "main.6b1623a7.js.map": "/chakra_cleaner/static/js/main.6b1623a7.js.map",
+    "453.c323b5c0.chunk.js.map": "/chakra_cleaner/static/js/453.c323b5c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2e6171d.css",
+    "static/js/main.6b1623a7.js"
+  ]
+}
